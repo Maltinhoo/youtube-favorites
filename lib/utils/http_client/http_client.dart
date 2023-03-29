@@ -1,6 +1,6 @@
 import 'package:http/http.dart';
 
-abstract class HttpClient {
+abstract class HttpService {
   Future<Response> get<T>(
     String url, {
     Map<String, dynamic>? queryParameters,
@@ -8,10 +8,10 @@ abstract class HttpClient {
   });
 }
 
-class HttpClientImp implements HttpClient {
+class HttpServiceImp implements HttpService {
   final Client client;
 
-  HttpClientImp(this.client);
+  HttpServiceImp(this.client);
 
   @override
   Future<Response> get<T>(

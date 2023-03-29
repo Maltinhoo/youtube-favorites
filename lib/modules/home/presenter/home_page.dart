@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../search/presenter/data_search.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -23,7 +25,14 @@ class HomePage extends StatelessWidget {
             icon: const Icon(Icons.star),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () async {
+              String result = await showSearch(
+                    context: context,
+                    delegate: DataSearch(),
+                  ) ??
+                  '';
+              print(result);
+            },
             icon: const Icon(Icons.search),
           ),
         ],
