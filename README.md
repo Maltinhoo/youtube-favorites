@@ -4,7 +4,9 @@ Esta aplicativo consiste em um estudo de BLoC Pattern, sendo um clone do YouTube
 
 
 
+
 https://user-images.githubusercontent.com/64161824/229520063-6029cb7d-3ead-46c9-8e2b-67b1a9a2ccab.mp4
+
 
 
 
