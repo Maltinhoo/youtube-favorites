@@ -13,4 +13,9 @@ class VideoRepositoryImp implements VideoRepository {
   Future<Either<Exception, List<VideoEntity>>> search(String search) async {
     return await dataSource.search(search);
   }
+
+  @override
+  Future<Either<Exception, List<VideoEntity>>> nextPage() {
+    return dataSource.nextPage();
+  }
 }
