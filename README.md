@@ -1,16 +1,19 @@
-# youtube_favoritos
+# YouTube Favoritos
 
-A new Flutter project.
+Esta aplicativo consiste em um estudo de BLoC Pattern, sendo um clone do YouTube com a função de favoritar.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+# Visão geral do aplicativo
 
-A few resources to get you started if this is your first Flutter project:
+Este aplicativo é composto por: rolagem infinita, arquitetura MVVM, animação simples, BLoC Pattern e injeção de dependência.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Packages
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [youtube_player_flutter](https://pub.dev/packages/youtube_player_flutter)
+- [bloc_pattern](https://pub.dev/packages/bloc_pattern)
+- [shared_preferences](https://pub.dev/packages/shared_preferences)
+- [dartz](https://pub.dev/packages/dartz)
+- [cupertino_icons](https://pub.dev/packages/cupertino_icons)
+- [http](https://pub.dev/packages/http)
+- [get_it](https://pub.dev/packages/get_it)
+- [rxdart](https://pub.dev/packages/rxdart)
