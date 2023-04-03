@@ -1,6 +1,8 @@
 import 'package:bloc_pattern/bloc_pattern.dart';
 import 'package:flutter/material.dart';
+import 'package:youtube_favoritos/modules/favorite/presenter/bloc/favorite_bloc.dart';
 import 'package:youtube_favoritos/modules/home/presenter/widgets/video_tile.dart';
+import 'package:youtube_favoritos/modules/video/domain/entities/video_entity.dart';
 
 import '../../search/presenter/data_search.dart';
 import 'bloc/home_bloc.dart';
@@ -20,9 +22,18 @@ class HomePage extends StatelessWidget {
         elevation: 0,
         backgroundColor: Colors.black87,
         actions: [
-          const Align(
+          Align(
             alignment: Alignment.center,
-            child: Text('0'),
+            child: StreamBuilder<Map<String, VideoEntity>>(
+                stream: BlocProvider.getBloc<FavoriteBloc>().outFav,
+                initialData: const {},
+                builder: (context, snapshot) {
+                  if (snapshot.hasData) {
+                    return Text('${snapshot.data?.length ?? '0'}');
+                  } else {
+                    return Container();
+                  }
+                }),
           ),
           IconButton(
             onPressed: () {},
