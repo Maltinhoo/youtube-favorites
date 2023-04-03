@@ -3,6 +3,10 @@
 Esta aplicativo consiste em um estudo de BLoC Pattern, sendo um clone do YouTube com a função de favoritar.
 
 
+
+https://user-images.githubusercontent.com/64161824/229519727-aa41f181-fae3-4562-955a-b7234bb34f2f.mp4
+
+
 # Visão geral do aplicativo
 
 Este aplicativo é composto por: rolagem infinita, arquitetura MVVM, animação simples, BLoC Pattern e injeção de dependência.
